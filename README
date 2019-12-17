@@ -1,0 +1,26 @@
+In this directory we have our IMEX-EIS+(s,p) methods.
+We denote  s-step methods of that satisfy the order conditions to order p and the error inhibiting conditions
+with post-processing by the notation IMEX-EIS+(s,P) where P=p+2.
+
+We focus on IMEX methods, so we require R_F to be strictly lower triangular. 
+We also restrict ourselves to the diagonally implicit cases so we require $\RG$ to be lower triangular.
+These methods are in files named e.g. 4s5pType2ImExEIS+ for a 4 stage method with order P=p+2=5.
+(Type 2 for the non-parallelizable methods). 
+
+If the methods have R_F and R_G that have only diagonal elements (i.e. R_F is the zero matrix and 
+R_G is a diagonal matrix) then the method can be implemented efficiently in parallel, 
+and to highlight this we denote the method pIMEX-EIS+(s,P) (where P=p+2). 
+These methods are in files named e.g. 4s5pType1ImExEIS+ for a 4 stage method with order P=p+2=5.
+(Type 1 for the parallelizable methods). 
+
+If the methods satisfy the order conditions to order p and the error inhibiting condition D \tau_{p+1} =0
+then these methods are denoted IMEX-EIS(s,p+1) and are in files named e.g. 3s4pType2ImExEIS.mat 
+for the non-parallelizable methods.
+If these methods are parallelizable we denote them pIMEX-EIS(s,p+1) and are in files called
+3s4pType1ImExEIS.mat (Type 1 for the parallelizable methods). 
+   
+All of our methods have an A-stable implicit part (i.e. when $F=0$). 
+The stability region for the explicit part is given in the paper.
+
+
+ 
