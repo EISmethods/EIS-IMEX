@@ -1,4 +1,13 @@
-In this directory we have our IMEX-EIS+(s,p) methods.
+In this directory we have our IMEX-EIS+(s,P) methods.
+The coefficients in each file are:
+The coefficient matrices D,AF,AG,RF,RG, and the abscissas c
+The error vectors 'tau',
+the radius of linear stability for explicit part 'Rstab',
+the number of stages 's',
+the order after post-processing 'p',
+the postprocessing weights 'weights'
+
+
 We denote  s-step methods of that satisfy the order conditions to order p and the error inhibiting conditions
 with post-processing by the notation IMEX-EIS+(s,P) where P=p+2.
 
