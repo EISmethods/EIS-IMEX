@@ -6,7 +6,8 @@ the radius of linear stability for explicit part 'Rstab',
 the number of stages 's',
 the order after post-processing 'p',
 the postprocessing weights 'weights'
-
+Methods that are EIS but not EIS+ will have p to be the order of the error inhibiting method (one more than 
+predicted by truncation error analysis) and will not have the weights listed.
 
 We denote  s-step methods of that satisfy the order conditions to order p and the error inhibiting conditions
 with post-processing by the notation IMEX-EIS+(s,P) where P=p+2.
