@@ -4,8 +4,8 @@ close all
 clear
 
 %load IMEX-EIS+ method
-load('3s4pType2ImExEIS+.mat')
-p=P;
+load('5s6pType2ImExEIS+.mat')
+p=P
 
 % calculate the number of intervals needed to stretch polynomial basis.
 if rank(tau(:,[p-1,end-1]),1.e-15)==1
